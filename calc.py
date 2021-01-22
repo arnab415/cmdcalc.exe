@@ -13,7 +13,7 @@ def calc(args):
     elif args.o == "div":
         return args.f / args.s
     else:
-        return "Something went wrong"
+        return "This is a calculator in cmd.Please enter the first number with argument --f (Number),and second number with --s (Number) and operation --o (add,sub,mul,div)"
 if __name__ == '__main__':
         parser = ap.ArgumentParser()
         parser.add_argument("--f", type=float, default=1.0,
